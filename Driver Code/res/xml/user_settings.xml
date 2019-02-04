@@ -1,0 +1,43 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_user_profile" >
+        <EditTextPreference
+            android:key="dName"
+            android:summary="Your Name as on your CNIC"
+            android:title="Name" />
+        <EditTextPreference
+            android:key="dCar"
+            android:summary="Format: ABC 1234"
+            android:title="Taxi Number Plate" />
+        <EditTextPreference
+            android:key="dCNIC"
+            android:summary="Format: 12345-1234567-1"
+            android:title="NADRA CNIC Number" />
+        <EditTextPreference
+            android:key="dContact"
+            android:summary="Format: 03001234567"
+            android:title="Mobile Number" />
+        <EditTextPreference
+            android:key="carName"
+            android:summary="e.g Suzuki Cultus"
+            android:title="Car Name" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_update_setting" >
+        <EditTextPreference
+            android:key="dInterval"
+            android:summary="min 12 seconds recommended"
+            android:title="Location Update Interval (digits only)" />
+        <EditTextPreference
+            android:key="dFare"
+            android:summary="Enter your Fare per kilometer"
+            android:title="Fare per kilometer" />
+    </PreferenceCategory>
+    <PreferenceCategory>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="newUser"
+            android:summary="Terms and Conditions can be viewed under the Menu Option"
+            android:title="I agree to the Terms and Conditions" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
